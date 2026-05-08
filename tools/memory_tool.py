@@ -535,7 +535,17 @@ MEMORY_SCHEMA = {
         "- 'memory': your notes -- environment facts, project conventions, tool quirks, lessons learned\n\n"
         "ACTIONS: add (new entry), replace (update existing -- old_text identifies it), "
         "remove (delete -- old_text identifies it).\n\n"
-        "SKIP: trivial/obvious info, things easily re-discovered, raw data dumps, and temporary task state."
+        "HARD RULES — never violate:\n"
+        "- Do NOT save task progress, session outcomes, completed-work logs, or temporary TODO state.\n"
+        "- Do NOT save investigative findings, system mechanism explanations, or 'how X works' notes.\n"
+        "  Memory is for verified stable facts, not exploration artifacts that may go stale.\n"
+        "- Do NOT save skill content, methodology rules, or self-referential meta-instructions.\n"
+        "  Procedures belong in skills, never in memory.\n"
+        "- Do NOT save raw data dumps, trivial/obvious info, or things easily re-discovered.\n"
+        "- If you discovered a new way to do something or solved a tricky problem, save it as a skill\n"
+        "  (skill_manage), not as a memory entry.\n\n"
+        "Before writing, ask: 'Will this still be true and useful 10 sessions from now?'\n"
+        "If no, don't write it."
     ),
     "parameters": {
         "type": "object",
